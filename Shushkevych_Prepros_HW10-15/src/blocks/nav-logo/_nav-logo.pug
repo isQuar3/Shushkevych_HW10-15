@@ -1,0 +1,23 @@
+include ../../blocks/logo/_logo.pug
+mixin nav-logo
+    .nav-logo&attributes(attributes)
+        .nav-logo__wrapper
+            nav.nav-logo__navigation
+                +logo.nav-logo__logo
+                input(id="burger" type="checkbox").nav-logo__checkbox
+                label(for="burger").nav-logo__burger
+                    i.fas.fa-hamburger
+                    i.fas.fa-times
+                ul.nav-logo__list
+                    li.nav-logo__item.nav-logo__item--active
+                        a(href="#home").nav-logo__link HOME
+                    li.nav-logo__item
+                        a(href="#about").nav-logo__link ABOUT
+                    li.nav-logo__item
+                        a(href="#services").nav-logo__link SERVICES
+                    li.nav-logo__item
+                        a(href="#gallery").nav-logo__link GALLERY
+                    li.nav-logo__item
+                        a(href="#blog").nav-logo__link BLOG
+                    li.nav-logo__item
+                        a(href="#contact").nav-logo__link CONTACT

@@ -1,0 +1,26 @@
+include ../blocks/home/_home.pug
+include ../blocks/about-us/_about-us.pug
+include ../blocks/services/_services.pug
+include ../blocks/gallery/_gallery.pug
+include ../blocks/subscribe/_subscribe.pug
+include ../blocks/blog/_blog.pug
+include ../blocks/contact/_contact.pug
+include ../blocks/footer/_footer.pug
+
+<!DOCTYPE html>
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        meta(http-equiv="X-UA-Compatible", content="ie=edge")
+        title Document
+        link(rel="stylesheet", href="./css/style.css")
+    body
+        +home
+        +about-us
+        +services
+        +gallery
+        +subscribe
+        +blog
+        +contact
+        +footer

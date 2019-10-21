@@ -1,0 +1,28 @@
+include ../../blocks/btn-contact/_btn-contact.pug
+include ../../blocks/text-company/_text-company.pug
+mixin contact
+    .contact
+        .container
+            .contact__wrapper
+                .contact__header
+                    .col-xl-4.col-lg-6.col-md-8.col-sm-12
+                        h1.contact__header--title Contact
+                        p.contact__header--subtitle For new projects, ideas, business or anything you'd like to discuss, contact with me!
+                .contact__block
+                    .row
+                        .col-xl-6.order-xl-1.col-lg-6.order-lg-1.col-md-12.order-md-2.col-sm-12.order-sm-2.col-12.order-2
+                            .contact__form
+                                form(action method="get")
+                                        .row
+                                            input(type="text" name="address" placeholder="Your Name..." required).input__address
+                                        .row
+                                            input(type="email" name="email" placeholder="Your email..." required).input__email
+                                        .row
+                                            input(data-mask="+(000) 000 0000" type="tel" name="phone" placeholder="Your phone number..." required).input__phone
+                                        .row
+                                            textarea(name="textarea" id="" cols="30" rows="10" placeholder="Your message...").input__text
+                                        .col-12
+                                            +btn-contact.contact__form--btn
+                        .col-xl-6.order-xl-2.col-lg-6.order-lg-2.d-lg-flex.justify-content-center.col-md-12.order-md-1.d-md-flex.justify-content-center.col-sm-12.order-sm-1.d-sm-flex.justify-content-center.col-12.order-1.d-flex
+                            .contact__company
+                                +text-company.contact__company--text
