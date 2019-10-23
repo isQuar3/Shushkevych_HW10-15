@@ -1,0 +1,16 @@
+include ../../blocks/nav-logo/_nav-logo.pug
+
+mixin home
+    .home
+        .container.container--lg
+            +nav-logo
+            .home__wrapper
+                .col-xl-4.col-lg-6.col-sm-12
+                    .home__header
+                        .headline
+                            h1.headline__title Fresh Life
+                            p.headline__subtitle Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+                            button.headline__btn GET FREE NOW
+                            .headline__scroll
+                .col-12.d-flex.justify-content-center.align-content-center
+                    img(src="./img/scroll.png" alt="scroll img")

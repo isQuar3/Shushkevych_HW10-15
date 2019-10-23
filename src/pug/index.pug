@@ -1,0 +1,32 @@
+include ../blocks/home/_home.pug
+include ../blocks/about-us/_about-us.pug
+include ../blocks/services/_services.pug
+include ../blocks/gallery/_gallery.pug
+include ../blocks/subscribe/_subscribe.pug
+include ../blocks/blog/_blog.pug
+include ../blocks/contact/_contact.pug
+include ../blocks/footer/_footer.pug
+
+<!DOCTYPE html>
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(description="На сайте cahee вы можете увидеть информацию о компании, галерею фотографий, контактную информацию")
+        //- base(href="https://github.com/isQuar3/Shushkevych_HW10-15")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        meta(http-equiv="X-UA-Compatible", content="ie=edge")
+        title Cahee page by Shushkevych
+        link(rel="stylesheet", href="./css/style.css")
+    body
+        +home
+        +about-us
+        +services
+        +gallery
+        +subscribe
+        +blog
+        +contact
+        +footer
+        
+        <script src="https://kit.fontawesome.com/18b8ba6422.js" crossorigin="anonymous"></script>
+        script(src="https://code.jquery.com/jquery-3.4.1.min.js")
+        script(src='./plugins/jquery.mask.min.js')

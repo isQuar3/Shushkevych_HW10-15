@@ -1,0 +1,99 @@
+.subscribe {
+    background-image: url(../../../dist/img/subscribeX1.png);
+    background-position: center right;
+    background-repeat: no-repeat;
+    font-family: 'Raleway', sans-serif;
+    background-size: 575px;
+
+    &__wrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-top: 147px;
+        padding-bottom: 163px;
+    }
+    &__header {
+        &--title {
+            margin-top: 0;
+            font-size: 40px;
+            font-weight: 700;
+            margin-bottom: 35px;
+        }
+        &--subtitle {
+            width: 75%;
+            font-size: 17px;
+            font-weight: 300;
+            margin-bottom: 35px;
+        }
+    }
+}
+.sibscribe__form {
+    &--input {
+        flex-grow: 1;
+        height: 55px;
+        margin-right: 25px;
+        padding-left: 15px;
+        font-size: 15px;
+        color: black;
+
+        &::placeholder {
+            color: black;
+        }
+        &:hover {
+            border: 2px solid rgb(194, 192, 192);
+            background-color: #fff;
+        }
+    }
+    &--submit {
+        padding: 15px 30px;
+        background-color: #96B92C;
+        font-size: 20px;
+        color: #ffffff;
+        border: none;
+        font-family: 'Raleway', sans-serif;
+
+        &:hover {
+            cursor: pointer;
+            color: white;
+            background-color: rgb(196, 224, 110);
+            border: 2px solid #96B92C;
+            padding: 13px 28px;
+        }
+    }
+}
+@media screen and (max-width: 991px) {
+    .subscribe__wrapper {
+        padding-top: 50px;
+        padding-bottom: 90px;
+    }
+}
+@media screen and (max-width: 767px) {
+    .subscribe__wrapper {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+}
+@media screen and (max-width: 575px) {
+    .subscribe__wrapper {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+    .subscribe__header {
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        align-items: center;
+    }
+}
+@media screen and (-webkit-device-pixel-ratio: 2) {
+    .subscribe {
+        background-image: url(../../dist/img/subscribeX2.png);
+        background-repeat: no-repeat;
+    }
+}
+@media screen and (-webkit-device-pixel-ratio: 3) {
+    .subscribe {
+        background-image: none;
+        background-repeat: no-repeat;
+    }
+}

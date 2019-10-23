@@ -1,0 +1,23 @@
+.text-company {
+    background-color: rgba(238, 238, 238, 0.7);
+    padding: 15px;
+    margin: 0 -15px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+
+    &__bar {
+        margin-bottom: 32px;
+
+        &--text1 {
+            font-weight: 700;
+        }
+        &--text2 {
+            text-decoration: none;
+            color: black;
+
+            &:hover {
+                color: red;
+            }
+        }
+    }
+}

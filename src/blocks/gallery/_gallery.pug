@@ -1,0 +1,25 @@
+mixin gallery
+    a(name="gallery")
+        .gallery
+            .container.container--lg
+                .gallery__wrapper
+                    .gallery__header
+                        .col-12.col-xl-6.col-lg-6
+                            h1.gallery__header--title Gallery
+                            p.gallery__header--subtitle Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    .gallery__content
+                        .gallery__top
+                            .row
+                                .col-xl-8.col-lg-8.d-md-flex.flex-md-column.justify-content-md-center
+                                    img(src="../dist/img/gallery/gallery01@x1.jpg" srcset="../dist/img/gallery/gallery01@x2.jpg 2x, ../dist/img/gallery/gallery01@x3.jpg 3x" alt="Тарелка боженины вокруг которой овощи").gallery__top--img1
+                                .col-xl-4.col-lg-4.d-md-flex.flex-md-column.justify-content-md-center
+                                    img(src="../dist/img/gallery/gallery02@x1.png" srcset="../dist/img/gallery/gallery02@x2.png 2x, ../dist/img/gallery/gallery02@x3.png 3x" alt="Много длинного красного перца рядом с приправой").gallery__top--img2
+                                    img(src="../dist/img/gallery/gallery03@x1.png" srcset="../dist/img/gallery/gallery03@x2.png 2x, ../dist/img/gallery/gallery03@x3.png 3x" alt="Тарелка персиков").gallery__top--img3
+                        .gallery__bottom
+                            .row
+                                .col-xl-6.col-lg-6.d-md-flex.flex-md-column.justify-content-md-center
+                                    img(src="../dist/img/gallery/gallery04@x1.png" srcset="../dist/img/gallery/gallery04@x2.png 2x, ../dist/img/gallery/gallery04@x3.png 3x" alt="Две кружки пива столкнулись в тосте").gallery__bottom--img1
+                                .col-xl-6.col-lg-6.d-md-flex.flex-md-column.justify-content-md-center
+                                    img(src="../dist/img/gallery/gallery06@x1.jpg" srcset="../dist/img/gallery/gallery06@x2.jpg 2x, ../dist/img/gallery/gallery06@x3.jpg 3x" alt="Тарелка борща").gallery__bottom--img2
+                        .gallery__button
+                            button.gallery__button--btn VIEW MORE
